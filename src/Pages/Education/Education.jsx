@@ -5,7 +5,10 @@ const Education = () => {
             
             <p className=" text-3xl font-bold " > Completed SSC and Currently Studying Computer Science <br /> Engineering (NPI) </p>
 
-            <section className=" max-w-4xl bg-slate-900 hover:bg-slate-950 pb-8 rounded-lg mt-6 lg:ml-32 " >
+            <section data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+            className=" max-w-4xl bg-slate-900 hover:bg-slate-950 pb-8 rounded-lg mt-6 lg:ml-32 " >
                 <div className=" flex items-center " >
                 <img  className=" w-32 h-32 rounded-full" src="https://i.ibb.co/BC7mpG7/31279709-7818779-removebg-preview.png" alt="" /> 
                 <h1 className=" text-4xl" >  Barguna Technical School & College </h1>
@@ -19,7 +22,10 @@ const Education = () => {
                    
             </section>
 
-            <section className=" max-w-4xl bg-slate-900 hover:bg-slate-950 pb-8 rounded-lg mt-6 lg:ml-32 " >
+            <section data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"
+            className=" max-w-4xl bg-slate-900 hover:bg-slate-950 pb-8 rounded-lg mt-6 lg:ml-32 " >
                 <div className=" flex items-center " >
                 <img  className=" w-32 h-32 rounded-full" src="https://i.ibb.co/WNhjYqZ/cse-logo-cse-letter-cse-letter-logo-design-initials-cse-logo-linked-with-circle-and-uppercase-monogr.png" alt="" /> 
                 <h1 className=" text-4xl" >  Department of Computer Science & Engineering  </h1>

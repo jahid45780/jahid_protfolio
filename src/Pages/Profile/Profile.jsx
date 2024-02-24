@@ -24,57 +24,57 @@ const Profile = () => {
                 </div>
                 <hr className=" mt-1" />
                 <div 
-                 className=" flex items-center justify-between mt-2 gap-16" >
+                 className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" >CSS</h1>
                     <FaCss3Alt className=" text-xl" ></FaCss3Alt>
                 </div>
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between  hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" >JavaScript</h1>
                      <IoLogoJavascript className=" text-xl" ></IoLogoJavascript>
                 </div>
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" >TailwindCSS</h1>
                     <SiTailwindcss className=" text-xl" ></SiTailwindcss>
                 </div>
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" >React Js</h1>
                     <RiReactjsFill className=" text-xl" ></RiReactjsFill>
                 </div>
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" > Firebase </h1>
                     <IoLogoFirebase className=" text-xl" ></IoLogoFirebase>
                 </div>
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" > Node Js </h1>
                     <FaNodeJs className=" text-xl" ></FaNodeJs>
                 </div>
  
                 <hr className=" mt-1" />
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" > Express Js </h1>
                     <img className=" w-5 h-5 rounded-full" src="https://i.ibb.co/kJykGGP/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" alt="" />
                 </div>
                 <hr className=" mt-1" />
 
-                <div className=" flex items-center justify-between mt-2 gap-16" >
+                <div className=" flex items-center justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-2xl" > MongoDB </h1>
                      <TbBrandMongodb className=" text-xl" ></TbBrandMongodb>
                 </div>
                 <hr className=" mt-1" />
                 <h1 className=" font-bold text-2xl text-center uppercase mt-5 " > Language </h1>
                 
-                <div className=" flex items-center mt-4 justify-between gap-16" >
+                <div className=" flex items-center  justify-between hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" > Bengali </h1>
                       <HiLanguage className=" text-xl" ></HiLanguage>
                 </div>
                 <hr className=" mt-1" />
                 <div
-                 className=" flex items-center justify-between mt-2 gap-16" >
+                 className=" flex items-center justify-between  hover:translate-x-5 hover:text-cyan-200 mt-4 gap-16" >
                     <h1 className=" text-xl" > English </h1>
                     <HiLanguage className=" text-xl" ></HiLanguage>
                 </div>

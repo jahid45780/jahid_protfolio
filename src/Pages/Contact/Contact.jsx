@@ -1,7 +1,40 @@
 import { MdAddLocationAlt } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMarkEmailRead } from "react-icons/md";
+
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import Swal from "sweetalert2";
+
 const Contact = () => {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        
+        e.preventDefault();
+        
+        emailjs
+          .sendForm('service_4ok9spk', 'template_6eho739', form.current, {
+            publicKey: 'QD74TVDoJG5EJa4-D',
+          })
+          .then(
+            
+            () => {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Thank you for contacting",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+            },
+            (error) => {
+              console.log('FAILED...', error.text);
+            },
+          );
+      };
+
+
     return (
       <div className=" mt-20" >
 
@@ -21,10 +54,10 @@ const Contact = () => {
 </section>
 
 <section className="text-center lg:mr-64" >
-    <form>
-        <input placeholder=" Full Name" className=" border-2 border-white w-96 h-12 text-2xl text-orange-500 rounded-xl" type="text" name="" id="" /> <br />
-        <input placeholder=" Email" className="border-2 border-white w-96 h-12 text-2xl text-orange-500 rounded-xl mt-3" type="email" name="" id="" /> <br />
-        <textarea placeholder=" Message" className="border-2 border-white w-96 h-20 text-2xl text-orange-500 rounded-xl mt-3" cols="18" rows="2"></textarea> <br />
+    <form ref={form} onSubmit={sendEmail} >
+        <input placeholder=" Full Name" name="from_name" required className=" border-2 border-white w-96 h-12 text-2xl text-orange-500 rounded-xl" type="text"  id="" /> <br />
+        <input placeholder=" Email" name="from_email" required className="border-2 border-white w-96 h-12 text-2xl text-orange-500 rounded-xl mt-3" type="email" id="" /> <br />
+        <textarea placeholder=" Message" name="message" required className="border-2 border-white w-96 h-20 text-2xl text-orange-500 rounded-xl mt-3" cols="18" rows="2"></textarea> <br />
          <input className=" btn w-96 mt-3 bg-green-500 hover:bg-green-700 text-white text-2xl" type="submit" value="Sent" />
         
     </form>
